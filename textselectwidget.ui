@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TextSelectWidget</class>
+ <widget class="QWidget" name="TextSelectWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>230</width>
+    <height>38</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>514</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#frame{	
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 214);
+}
+
+QComboBox{
+    border-radius: 2px;
+}
+
+QPushButton#pushButtonRed {
+    background-color: rgba(250, 0, 0, 1);
+    border-radius: 1px;
+}
+QPushButton#pushButtonRed:hover {
+    border-image:url(:/image/pc_screenshot_color_hover.png);
+}
+QPushButton#pushButtonRed:checked {
+    border-image:url(:/image/pc_screenshot_color_selected.png);
+}
+
+QPushButton#pushButtonYellow {
+    background-color: rgba(255, 204, 0, 1);
+    border-radius: 1px;
+}
+QPushButton#pushButtonYellow:hover {
+    border-image:url(:/image/pc_screenshot_color_hover.png);
+}
+QPushButton#pushButtonYellow:checked {
+    border-image:url(:/image/pc_screenshot_color_selected.png);
+}
+
+QPushButton#pushButtonBlue {
+    background-color: rgba(69, 134, 255, 1);
+    border-radius: 1px;
+}
+QPushButton#pushButtonBlue:hover {
+    border-image:url(:/image/pc_screenshot_color_hover.png);
+}
+QPushButton#pushButtonBlue:checked {
+    border-image:url(:/image/pc_screenshot_color_selected.png);
+}
+
+QPushButton#pushButtonGreen {
+    background-color: rgba(116, 224, 0, 1);
+    border-radius: 1px;
+}
+QPushButton#pushButtonGreen:hover {
+    border-image:url(:/image/pc_screenshot_color_hover.png);
+}
+QPushButton#pushButtonGreen:checked {
+    border-image:url(:/image/pc_screenshot_color_selected.png);
+}
+
+QPushButton#pushButtonGray {
+    background-color: rgba(74, 74, 74, 1);
+    border-radius: 1px;
+}
+QPushButton#pushButtonGray:hover {
+    border-image:url(:/image/pc_screenshot_color_hover.png);
+}
+QPushButton#pushButtonGray:checked {
+    border-image:url(:/image/pc_screenshot_color_selected.png);
+}
+
+QPushButton#pushButtonWhite{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 1px;
+}
+QPushButton#pushButtonWhite:hover {
+    border-image:url(:/image/pc_screenshot_color_hover_white.png);
+}
+QPushButton#pushButtonWhite:checked {
+    border-image:url(:/image/pc_screenshot_color_selected_white.png);
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>230</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>9</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox::drop-down {
+	width:0px;
+	image: none;
+ }
+
+QComboBox QAbstractItemView {
+	min-height: 87px;
+	max-height:87px;
+	min-width:60px;
+	font-size:12px;	
+	background-color: rgb(255, 255, 255);
+	border-radius: 0px;
+}
+
+QComboBox {
+	image: url(:/image/pc_screenshot_textsize_normal.png);
+	color: rgba(0, 0, 0, 0.86);
+     padding-left: 18px;
+	font-size:12px;
+	background-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>小</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>中</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>大</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGray">
+    <property name="geometry">
+     <rect>
+      <x>176</x>
+      <y>11</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGreen">
+    <property name="geometry">
+     <rect>
+      <x>154</x>
+      <y>11</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBlue">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>11</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonYellow">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>11</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonRed">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>11</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonWhite">
+    <property name="geometry">
+     <rect>
+      <x>198</x>
+      <y>11</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

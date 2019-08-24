@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/pc_screenshot_arrow_click.png</file>
+        <file>image/pc_screenshot_arrow_hover.png</file>
+        <file>image/pc_screenshot_arrow_normal.png</file>
+        <file>image/pc_screenshot_cancel_click.png</file>
+        <file>image/pc_screenshot_cancel_hover.png</file>
+        <file>image/pc_screenshot_cancel_normal.png</file>
+        <file>image/pc_screenshot_circle_click.png</file>
+        <file>image/pc_screenshot_circle_hover.png</file>
+        <file>image/pc_screenshot_circle_normal.png</file>
+        <file>image/pc_screenshot_color_selected.png</file>
+        <file>image/pc_screenshot_color_selected_white.png</file>
+        <file>image/pc_screenshot_complete_hover.png</file>
+        <file>image/pc_screenshot_complete_normal.png</file>
+        <file>image/pc_screenshot_conplete_click.png</file>
+        <file>image/pc_screenshot_disabled_click.png</file>
+        <file>image/pc_screenshot_pen_click.png</file>
+        <file>image/pc_screenshot_pen_hover.png</file>
+        <file>image/pc_screenshot_pen_normal.png</file>
+        <file>image/pc_screenshot_recall_click.png</file>
+        <file>image/pc_screenshot_recall_hover.png</file>
+        <file>image/pc_screenshot_recall_normal.png</file>
+        <file>image/pc_screenshot_rectangle_click.png</file>
+        <file>image/pc_screenshot_rectangle_hover.png</file>
+        <file>image/pc_screenshot_rectangle_normal.png</file>
+        <file>image/pc_screenshot_save_click.png</file>
+        <file>image/pc_screenshot_save_hover.png</file>
+        <file>image/pc_screenshot_save_normal2x.png</file>
+        <file>image/pc_screenshot_text_click.png</file>
+        <file>image/pc_screenshot_text_hover.png</file>
+        <file>image/pc_screenshot_text_normal.png</file>
+        <file>image/pc_screenshot_textsize_click.png</file>
+        <file>image/pc_screenshot_textsize_normal.png</file>
+        <file>image/pc_screenshot_color_hover.png</file>
+        <file>image/pc_screenshot_color_hover_white.png</file>
+    </qresource>
+</RCC>

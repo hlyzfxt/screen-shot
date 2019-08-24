@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlWidget</class>
+ <widget class="QWidget" name="ControlWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>389</width>
+    <height>38</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>389</width>
+    <height>38</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#frame{	
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 214);
+}
+QPushButton#rectangleBtn {
+	border-image:url(:/image/pc_screenshot_rectangle_normal.png);
+    border-radius: 1px;
+}
+QPushButton#rectangleBtn:hover {
+    border-image:url(:/image/pc_screenshot_rectangle_hover.png);
+}
+QPushButton#rectangleBtn:pressed {
+	border-image: url(:/image/pc_screenshot_rectangle_click.png);	
+}
+QPushButton#rectangleBtn:checked {
+	border-image: url(:/image/pc_screenshot_rectangle_click.png);	
+}
+
+QPushButton#drawRoundBtn {
+    border-image: url(:/image/pc_screenshot_circle_normal.png);
+    border-radius: 1px;
+}
+QPushButton#drawRoundBtn:hover {
+	border-image:url(:/image/pc_screenshot_circle_hover.png);
+}
+QPushButton#drawRoundBtn:pressed {
+    border-image:url(:/image/pc_screenshot_circle_click.png);
+}
+QPushButton#drawRoundBtn:checked {
+    border-image:url(:/image/pc_screenshot_circle_click.png);
+}
+
+QPushButton#arrowBtn {
+    border-image: url(:/image/pc_screenshot_arrow_normal.png);
+    border-radius: 1px;
+}
+QPushButton#arrowBtn:hover {
+	border-image: url(:/image/pc_screenshot_arrow_hover.png);
+}
+QPushButton#arrowBtn:pressed {
+    border-image:url(:/image/pc_screenshot_arrow_click.png);
+}
+QPushButton#arrowBtn:checked {
+    border-image:url(:/image/pc_screenshot_arrow_click.png);
+}
+
+QPushButton#drawLineBtn{
+    border-image: url(:/image/pc_screenshot_pen_normal.png);
+    border-radius: 1px;
+}
+QPushButton#drawLineBtn:hover {
+	border-image:url(:/image/pc_screenshot_pen_hover.png)
+}
+QPushButton#drawLineBtn:pressed {
+    border-image:url(:/image/pc_screenshot_pen_click.png);
+}
+QPushButton#drawLineBtn:checked {
+    border-image:url(:/image/pc_screenshot_pen_click.png);
+}
+
+QPushButton#textEditBtn {
+    border-image: url(:/image/pc_screenshot_text_normal.png);
+    border-radius: 1px;
+}
+QPushButton#textEditBtn:hover {
+    border-image:url(:/image/pc_screenshot_text_hover.png);
+}
+QPushButton#textEditBtn:pressed {
+    border-image:url(:/image/pc_screenshot_text_click.png);
+}
+QPushButton#textEditBtn:checked {
+    border-image:url(:/image/pc_screenshot_text_click.png);
+}
+
+Line#line{
+	background-color: rgba(255, 255, 255, 0x4D);
+}
+
+QPushButton#returneditBtn {
+    border-image: url(:/image/pc_screenshot_recall_normal.png);
+    border-radius: 1px;
+}
+QPushButton#returneditBtn:disabled {
+    border-image: url(:/image/pc_screenshot_disabled_click.png);
+}
+QPushButton#returneditBtn:hover {
+    border-image: url(:/image/pc_screenshot_recall_hover.png);
+}
+QPushButton#returneditBtn:pressed {
+    border-image:url(:/image/pc_screenshot_recall_click.png);
+}
+
+QPushButton#saveBtn{
+    border-image: url(:/image/pc_screenshot_save_normal2x.png);
+    border-radius: 1px;
+}
+QPushButton#saveBtn:hover {
+    border-image:url(:/image/pc_screenshot_save_hover.png);
+}
+QPushButton#saveBtn:pressed {
+    border-image:url(:/image/pc_screenshot_save_click.png);
+}
+
+QPushButton#cancelBtn {
+    border-image: url(:/image/pc_screenshot_cancel_normal.png);
+    border-radius: 1px;
+}
+QPushButton#cancelBtn:hover {
+    border-image: url(:/image/pc_screenshot_cancel_hover.png);
+}
+QPushButton#cancelBtn:pressed {
+    border-image:url(:/image/pc_screenshot_cancel_click.png);
+}
+
+QPushButton#finishBtn {
+    border-image:url(:/image/pc_screenshot_complete_normal.png);
+    border-radius: 1px;
+}
+QPushButton#finishBtn:hover {
+    border-image:url(:/image/pc_screenshot_complete_hover.png);
+}
+QPushButton#finishBtn:pressed {
+    border-image:url(:/image/pc_screenshot_conplete_click.png);
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>389</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>10</y>
+      <width>1</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0.30);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returneditBtn">
+    <property name="geometry">
+     <rect>
+      <x>208</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>撤销操作</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="drawLineBtn">
+    <property name="geometry">
+     <rect>
+      <x>136</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>画笔</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="arrowBtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>画箭头</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="textEditBtn">
+    <property name="geometry">
+     <rect>
+      <x>172</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>添加文字</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rectangleBtn">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>画矩形</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="drawRoundBtn">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>画圆</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveBtn">
+    <property name="geometry">
+     <rect>
+      <x>269</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>保存截图</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancelBtn">
+    <property name="geometry">
+     <rect>
+      <x>305</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>退出截图</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="finishBtn">
+    <property name="geometry">
+     <rect>
+      <x>341</x>
+      <y>9</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>完成截图</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
